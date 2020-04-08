@@ -1,0 +1,57 @@
+body{
+  max-width:1024px;
+  height: 100vh;
+  margin: 0 auto;
+}
+i{
+  color: #000;
+  display: inline;
+}
+#header{
+  height: 30vh;
+  width:100%;
+  background-image: url("lagos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.addToDo{
+  margin:2% auto;
+  width:80%;
+
+}
+.refresh{
+  float: right;
+  color:#fff;
+  padding: 3%;
+}
+#items{
+  padding: 0 15%;
+}
+#input{
+  width:80%;
+padding: 2%;
+border:4px soild #555;
+border-radius: 1em;
+outline: none;
+font-size:150%;
+}
+.add{
+  padding-left: 5%;
+  color:blue;
+}
+li{
+  list-style-type: none;
+  padding: 2%;
+  font-size: 150%;
+}
+.delete{
+  float:right;
+  clear:both;
+  color: red;
+}
+.line-through{
+text-decoration: line-through;
+}
+.text{
+  font-size: 200%;
+}
