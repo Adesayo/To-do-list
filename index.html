@@ -6,27 +6,76 @@
     <link rel="stylesheet" href="todolist.css">
   </head>
   <body>
-  <div class="container">
-    <div id="header">
-      <div class="clear">
-<i class="fas fa-sync-alt fa-3x refresh"></i>
-      </div>
-      <div id="date">
 
-      </div>
+<div class="title"></div>
+<div class="all-tasks">
+  <h2>My lists</h2>
+  <ul class="task-list" data-lists>
+
+  </ul>
+
+  <form action="" id="newList">
+    <input type="text"
+     class="new"
+      placeholder="Add new list"
+      />
+      <button type="submit" class="list-btn">+</button>
+  </form>
+</div>
+
+  <div class="todo-list">
+    <div class="todo-header">
+      <h2 class="list-title">YouTube</h2>
+      <p class="task-count">3 tasks remaining</p>
     </div>
-    <div class="addToDo">
-    <input type="text" id="input"placeholder="Add to-do" value="">
-    <i class="fas fa-plus-circle fa-4x add"></i>
-  </div>
-    <ul id=list>
-      <i class="fas fa-check-circle fa-3x"></i>
-       <p class="text line-through" job="" >Work out</p>
-       <i class="fas fa-trash fa-3x delete"></i>
-    </ul>
-    <script src="https://kit.fontawesome.com/3591cbc75e.js" crossorigin="anonymous"></script>
+<div class="todo-body">
 
-    <script src="todolist.js"></script>
+  <div class="tasks">
+  <div class="task">
+    <input type="checkbox"
+
+     />
+     <label for="task-1">
+       <span class="custom-checkbox"></span>
+       Write new blog post
+
+     </label>
   </div>
-  </body>
+
+ 
+  </div>
+
+  <div class="new-task-creator">
+    <form action="" id="taskNew">
+      <input type="text"
+       class="new task"
+       id="taskNewValue"
+        placeholder="Add new task"
+        />
+        <button type="button" class="list-btn">+</button>
+    </form>
+  </div>
+
+  <div class="delete">
+<button type="button" class="btn-delete" id="listClear">Clear completed tasks</button>
+<button type="button" class="btn-delete" id=listDelete>Delete list</button>
+  </div>
+</div>
+  </div>
+</div>
+<template id="task-template">
+  <div class="task">
+    <input type="checkbox" />
+     <label>
+       <span class="custom-checkbox"></span>
+
+     </label>
+  </div>
+</template>
+
+
+  <script src="todolist.js"></script>
+
+</body>
+
 </html>
